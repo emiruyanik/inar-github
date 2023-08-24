@@ -31,6 +31,8 @@ public class Deneme {
 
             } else {
                 System.out.println(number2 + "<" + number1 + "<" + number3);
+
+
             }
         }
     }
