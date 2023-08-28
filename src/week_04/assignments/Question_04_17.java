@@ -9,6 +9,7 @@ public class Question_04_17 {
         System.out.println("Enter a year");
         int year = input.nextInt();
 
+// if you don't make this process your code will not work!
         input.nextLine();
 
         System.out.println("Enter three letter of the month (with the first letter capitalized)");
