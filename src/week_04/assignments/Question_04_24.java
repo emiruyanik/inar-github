@@ -9,10 +9,10 @@ public class Question_04_24 {
         System.out.println("Enter the first city");
         String city1 = input.nextLine();
 
-        System.out.println("Enter the first city");
+        System.out.println("Enter the second city");
         String city2 = input.nextLine();
 
-        System.out.println("Enter the first city");
+        System.out.println("Enter the third city");
         String city3 = input.nextLine();
 
         if (city1.compareToIgnoreCase(city2) < 0 && city1.compareToIgnoreCase(city3) < 0) {
