@@ -9,11 +9,12 @@ public class Question_05_39 {
         double target = 30000;
         double remainingAmountToTarget = target - baseSalary - firstStage - secondStage;
 
-        double necessaryAmount = 10001;
+        double necessaryAmount = 10000;
         double account = 0;
         do {
-            account = necessaryAmount * 0.12;
             necessaryAmount++;
+            account = necessaryAmount * 0.12;
+
         } while (remainingAmountToTarget >= account);
 
         System.out.println(necessaryAmount + 10000);
