@@ -8,16 +8,16 @@ public class Question_05_15 {
         int valueOfCh = 33;
 
 
-        while (valueOfCh<127){
+        while (valueOfCh < 127) {
 
 
-            char ch =(char) valueOfCh;
-            chars = chars+ch+" ";
+            char ch = (char) valueOfCh;
+            chars = chars + ch + " ";
             valueOfCh++;
             counter++;
 
-            if (counter%10==0){
-                chars=chars+"\n";
+            if (counter % 10 == 0) {
+                chars = chars + "\n";
             }
 
         }

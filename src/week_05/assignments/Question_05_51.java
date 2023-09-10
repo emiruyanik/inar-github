@@ -12,16 +12,16 @@ public class Question_05_51 {
         System.out.print("Enter the second string:");
         String secondSt = input.nextLine();
 
-        int lengthOfFirstSt =firstSt.length();
-        int lengthOfSecondSt =secondSt.length();
+        int lengthOfFirstSt = firstSt.length();
+        int lengthOfSecondSt = secondSt.length();
 
-        int min = Math.min(lengthOfFirstSt,lengthOfSecondSt);
+        int min = Math.min(lengthOfFirstSt, lengthOfSecondSt);
 
-        String prefixSt ="";
+        String prefixSt = "";
 
-        for (int i = 0; i <min ; i++) {
-            if (firstSt.charAt(i)==secondSt.charAt(i)){
-                prefixSt+=firstSt.charAt(i);
+        for (int i = 0; i < min; i++) {
+            if (firstSt.charAt(i) == secondSt.charAt(i)) {
+                prefixSt += firstSt.charAt(i);
 
             }
 

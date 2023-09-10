@@ -19,8 +19,8 @@ public class Question_05_25 {
             }
             if (counter % 10000 == 0) {
                 pi = 4 * stableOneValue;
-                System.out.println("PI value for: "+i+"  "+pi);
-                stableOneValue=1.0;
+                System.out.println("PI value for: " + i + "  " + pi);
+                stableOneValue = 1.0;
 
             }
         }

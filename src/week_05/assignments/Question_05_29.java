@@ -31,7 +31,7 @@ public class Question_05_29 {
 
                     System.out.printf("%7d ", j);
 
-                    if ((day + j) % 7 == 0 ) {
+                    if ((day + j) % 7 == 0) {
                         System.out.println();
                     }
 
@@ -43,7 +43,7 @@ public class Question_05_29 {
 
                         System.out.printf("%7d ", j);
 
-                        if ((day + j) % 7 == 0 ) {
+                        if ((day + j) % 7 == 0) {
                             System.out.println();
                         }
                     }
@@ -53,7 +53,7 @@ public class Question_05_29 {
 
                         System.out.printf("%7d ", j);
 
-                        if ((day + j) % 7 == 0 ) {
+                        if ((day + j) % 7 == 0) {
                             System.out.println();
                         }
                     }
@@ -65,7 +65,7 @@ public class Question_05_29 {
 
                     System.out.printf("%7d ", j);
 
-                    if ((day + j) % 7 == 0 ) {
+                    if ((day + j) % 7 == 0) {
                         System.out.println();
                     }
 

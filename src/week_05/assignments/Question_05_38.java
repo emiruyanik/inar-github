@@ -19,8 +19,8 @@ public class Question_05_38 {
             counter++;
             if (secondNumber == 8) {
                 isOneDigit = true;
-            }else {
-                isOneDigit=false;
+            } else {
+                isOneDigit = false;
             }
         }
 
@@ -42,7 +42,7 @@ public class Question_05_38 {
 
         for (int i = counter; i >= 0; i--) {
 
-            reverseOfOctalNumbers+=octalNumbers.charAt(i);
+            reverseOfOctalNumbers += octalNumbers.charAt(i);
 
         }
         System.out.println(reverseOfOctalNumbers);

@@ -16,13 +16,13 @@ public class Question_05_16 {
 
         do {
             if (number % divisor == 0) {
-                factorsOfNumber=factorsOfNumber+divisor+" ";
-                number=number/divisor;
+                factorsOfNumber = factorsOfNumber + divisor + " ";
+                number = number / divisor;
 
-            }else {
+            } else {
                 divisor++;
             }
-        }while (number!=1);
+        } while (number != 1);
 
         System.out.println(factorsOfNumber);
 

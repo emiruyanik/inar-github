@@ -14,11 +14,11 @@ public class Question_05_50 {
         int uppercaseLetters = 0;
         for (int i = 0; i < lengthOfSt; i++) {
             char ch = st.charAt(i);
-            if (Character.isUpperCase(ch)){
+            if (Character.isUpperCase(ch)) {
                 uppercaseLetters++;
             }
         }
 
-        System.out.println("The number of uppercase letters is:"+uppercaseLetters);
+        System.out.println("The number of uppercase letters is:" + uppercaseLetters);
     }
 }

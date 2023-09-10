@@ -11,6 +11,6 @@ public class Question_05_43 {
             }
 
         }
-        System.out.println("The total number of all combination is "+counter);
+        System.out.println("The total number of all combination is " + counter);
     }
 }

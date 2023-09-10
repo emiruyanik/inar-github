@@ -16,7 +16,7 @@ public class Question_05_30 {
         System.out.print("\nEnter the number of months:");
         int months = input.nextInt();
 
-        double monthlyInterestRate =  interestRate / 12 / 100;
+        double monthlyInterestRate = interestRate / 12 / 100;
         double totalAccount = 0;
 
 

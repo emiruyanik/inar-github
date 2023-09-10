@@ -14,18 +14,18 @@ public class Question_05_17 {
 
             numberOfLines = input.nextInt();
         }
-        for (int i =1;  i<=numberOfLines; i++) {
-            for (int j = 1; j <=numberOfLines-i ; j++) {
+        for (int i = 1; i <= numberOfLines; i++) {
+            for (int j = 1; j <= numberOfLines - i; j++) {
                 System.out.print("  ");
 
             }
 
-            for (int j = 0; j <i ; j++) {
-                System.out.print(i-j+" ");
+            for (int j = 0; j < i; j++) {
+                System.out.print(i - j + " ");
             }
 
-            for (int j = 2; j <=i ; j++) {
-                System.out.print(j +" ");
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
 
             }
 

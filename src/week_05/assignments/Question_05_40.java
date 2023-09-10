@@ -12,12 +12,12 @@ public class Question_05_40 {
 
             if (randomFlippingNumber == 0) {
                 heads++;
-            }else {
+            } else {
                 tails++;
             }
         }
 
-        System.out.println("Heads :"+heads);
-        System.out.println("Tails :"+tails);
+        System.out.println("Heads :" + heads);
+        System.out.println("Tails :" + tails);
     }
 }

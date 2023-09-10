@@ -28,12 +28,12 @@ public class Question_05_02 {
                 System.out.printf("Wrong answer it should be %d\n", (number1 + number2));
                 wrongCounter++;
             }
-            s1 =s1 + number1 + "+" + number2 + "=" + answer + ((number1 + number2 == answer ? " correct" : " wrong")) + "\n";
+            s1 = s1 + number1 + "+" + number2 + "=" + answer + ((number1 + number2 == answer ? " correct" : " wrong")) + "\n";
             counter++;
 
         }
         System.out.println("Correct answer is " + correctCounter);
-        System.out.println("Wrong answer is " +wrongCounter);
+        System.out.println("Wrong answer is " + wrongCounter);
         System.out.println("\n" + s1);
     }
 }

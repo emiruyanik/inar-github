@@ -12,7 +12,7 @@ public class Question_05_08 {
         boolean checking = true;
         int max = 0;
         String[] names = new String[numberOfStudents];
-        String studentWithTheHighestScore ="";
+        String studentWithTheHighestScore = "";
 
         System.out.println("Enter each student's score and name");
 
@@ -29,7 +29,7 @@ public class Question_05_08 {
         for (int i = 0; i < numberOfStudents; i++) {
             if (checking) {
                 max = notes[i];
-                studentWithTheHighestScore =names[i];
+                studentWithTheHighestScore = names[i];
 
             }
             for (int j = 1; j < numberOfStudents - i; j++) {
@@ -41,6 +41,6 @@ public class Question_05_08 {
                 }
             }
         }
-        System.out.println("Student with the highest score is : "+studentWithTheHighestScore);
+        System.out.println("Student with the highest score is : " + studentWithTheHighestScore);
     }
 }

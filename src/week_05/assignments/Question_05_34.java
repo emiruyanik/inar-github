@@ -43,12 +43,12 @@ public class Question_05_34 {
 
             } else if (randomNumber == 1 && userNumber == 1) {
                 System.out.println("You are rock.Computer is rock.It is draw ");
-            }else {
+            } else {
                 System.out.println("You are paper.Computer is paper.It is draw ");
             }
 
-            System.out.println("Computer wins:"+computerWins);
-            System.out.println("User wins:"+userWins);
+            System.out.println("Computer wins:" + computerWins);
+            System.out.println("User wins:" + userWins);
 
         }
     }

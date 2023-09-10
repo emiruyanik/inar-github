@@ -39,11 +39,11 @@ public class Question_05_42 {
         }
 
 
-        if (commissionSought > 400&&commissionSought<901) {
+        if (commissionSought > 400 && commissionSought < 901) {
             necessarySaleAmount += 5000;
-        } else if (commissionSought>901) {
-            necessarySaleAmount+=10000;
+        } else if (commissionSought > 901) {
+            necessarySaleAmount += 10000;
         }
-        System.out.println("Minimum sale to earn $"+commissionSought+" "+necessarySaleAmount);
+        System.out.println("Minimum sale to earn $" + commissionSought + " " + necessarySaleAmount);
     }
 }

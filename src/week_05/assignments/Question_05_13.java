@@ -10,9 +10,9 @@ public class Question_05_13 {
         while (checking) {
             init++;
             cubeOfInit = Math.pow(init, 3);
-            if (cubeOfInit>12000){
+            if (cubeOfInit > 12000) {
                 init--;
-                checking=false;
+                checking = false;
             }
 
         }

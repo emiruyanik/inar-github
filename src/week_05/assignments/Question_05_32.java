@@ -23,16 +23,16 @@ public class Question_05_32 {
         } while (!(lotteryNumber.length() == 2 && lotteryNumber.charAt(0) <= '9'
                 && lotteryNumber.charAt(1) >= '0'));
 
-        System.out.println("The lottery number "+numbers);
+        System.out.println("The lottery number " + numbers);
 
-        if (numbers.equals(lotteryNumber)){
+        if (numbers.equals(lotteryNumber)) {
             System.out.println("You win $10000");
-    } else if (numbers.charAt(0)==lotteryNumber.charAt(1)&&numbers.charAt(1)==lotteryNumber.charAt(0)) {
+        } else if (numbers.charAt(0) == lotteryNumber.charAt(1) && numbers.charAt(1) == lotteryNumber.charAt(0)) {
             System.out.println("You win $3000");
         } else if (numbers.charAt(0) == lotteryNumber.charAt(1) || numbers.charAt(0) == lotteryNumber.charAt(0) ||
-                numbers.charAt(1)==lotteryNumber.charAt(0)||numbers.charAt(1)==lotteryNumber.charAt(1)){
+                numbers.charAt(1) == lotteryNumber.charAt(0) || numbers.charAt(1) == lotteryNumber.charAt(1)) {
             System.out.println("You win $1000");
-        }else {
+        } else {
             System.out.println("You win nothing");
         }
 

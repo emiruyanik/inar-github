@@ -14,21 +14,21 @@ public class Question_05_49 {
         int countOfConsonants = 0;
         for (int i = 0; i < lengthOfSt; i++) {
 
-            if (st.charAt(i)==' '){
+            if (st.charAt(i) == ' ') {
                 continue;
             }
 
-            if (st.charAt(i) == 'A'||st.charAt(i)=='E'||st.charAt(i)=='I'||st.charAt(i)=='O'
-                    ||st.charAt(i)=='U'||st.charAt(i)=='a'||st.charAt(i)=='e'
-                    ||st.charAt(i)=='i'||st.charAt(i)=='o'||st.charAt(i)=='u'){
+            if (st.charAt(i) == 'A' || st.charAt(i) == 'E' || st.charAt(i) == 'I' || st.charAt(i) == 'O'
+                    || st.charAt(i) == 'U' || st.charAt(i) == 'a' || st.charAt(i) == 'e'
+                    || st.charAt(i) == 'i' || st.charAt(i) == 'o' || st.charAt(i) == 'u') {
 
                 countOfVowels++;
 
-            }else {
+            } else {
                 countOfConsonants++;
             }
         }
-        System.out.println("The number of vowels is :"+countOfVowels);
-        System.out.println("The number of consonants is :"+countOfConsonants);
+        System.out.println("The number of vowels is :" + countOfVowels);
+        System.out.println("The number of consonants is :" + countOfConsonants);
     }
 }

@@ -13,7 +13,7 @@ public class Question_05_48 {
         String newSt = "";
         for (int i = 0; i < lengthOfSt; i++) {
             if (i % 2 == 0) {
-                newSt+=st.charAt(i);
+                newSt += st.charAt(i);
 
             }
         }

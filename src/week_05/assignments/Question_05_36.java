@@ -9,20 +9,18 @@ public class Question_05_36 {
         System.out.println("Enter first 9 digits of an ISBN:");
 
         String stNumbers = "";
-        int counter =0;
+        int counter = 0;
 
         int[] numbers = new int[9];
-       while (counter<9){
-           int receivedNumber =input.nextInt();
+        while (counter < 9) {
+            int receivedNumber = input.nextInt();
             if (receivedNumber < 10 && receivedNumber >= 0) {
                 numbers[counter] = receivedNumber;
                 stNumbers += numbers[counter];
                 counter++;
+            } else {
+                System.out.println("You have entered invalid value ");
             }
-
-          else {
-               System.out.println("You have entered invalid value ");
-           }
 
 
         }

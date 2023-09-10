@@ -17,6 +17,6 @@ public class Question_05_46 {
 
         }
 
-        System.out.println("The reversed string is "+reversedSt);
+        System.out.println("The reversed string is " + reversedSt);
     }
 }

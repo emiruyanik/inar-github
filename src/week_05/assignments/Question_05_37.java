@@ -42,9 +42,9 @@ public class Question_05_37 {
 
         }
 
-        String reverseOfBinaryValues ="";
-        for (int i =counter; i>=0; i--) {
-            reverseOfBinaryValues+=binaryValue.charAt(i);
+        String reverseOfBinaryValues = "";
+        for (int i = counter; i >= 0; i--) {
+            reverseOfBinaryValues += binaryValue.charAt(i);
         }
 
         System.out.printf("The binary value of the decimal\"%d\" is: %s", receivedNumber, reverseOfBinaryValues);

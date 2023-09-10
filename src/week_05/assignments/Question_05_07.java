@@ -8,8 +8,8 @@ public class Question_05_07 {
         for (int i = 1; i <= 10; i++) {
 
             currentTuition = currentTuition + currentTuition * (5.0 / 100);
-            if (i==10){
-                tenthYearTuition=currentTuition;
+            if (i == 10) {
+                tenthYearTuition = currentTuition;
             }
 
         }

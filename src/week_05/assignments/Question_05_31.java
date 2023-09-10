@@ -17,10 +17,10 @@ public class Question_05_31 {
 
         System.out.println("Month CD value");
 
-        for (int i = 1; i <=maturityPeriod ; i++) {
+        for (int i = 1; i <= maturityPeriod; i++) {
 
-            initialDepositAmount+=initialDepositAmount*percentageYield/1200;
-            System.out.printf("%d     %.2f\n",i,initialDepositAmount);
+            initialDepositAmount += initialDepositAmount * percentageYield / 1200;
+            System.out.printf("%d     %.2f\n", i, initialDepositAmount);
         }
     }
 }

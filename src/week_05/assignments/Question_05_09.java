@@ -37,7 +37,7 @@ public class Question_05_09 {
                 studentWithTheHighestScore = names[i];
             }
             for (int j = 1; j < numberOfStudents - i; j++) {
-                if (max < notes[i+1]) {
+                if (max < notes[i + 1]) {
                     checking1 = true;
                     break;
                 } else {
@@ -54,7 +54,7 @@ public class Question_05_09 {
 
             }
             for (int j = 1; j < numberOfStudents - i; j++) {
-                if (secondBigNumber < notes[i+1]) {
+                if (secondBigNumber < notes[i + 1]) {
                     checking2 = true;
                     break;
                 } else {
@@ -64,8 +64,8 @@ public class Question_05_09 {
         }
 
 
-        System.out.println("Student with the highest score is : "+studentWithTheHighestScore);
-        System.out.println("Student with the highest second score is : "+studentWithTheHighestSecondScore);
+        System.out.println("Student with the highest score is : " + studentWithTheHighestScore);
+        System.out.println("Student with the highest second score is : " + studentWithTheHighestSecondScore);
 
     }
 }

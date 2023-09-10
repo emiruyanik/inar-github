@@ -31,15 +31,15 @@ public class Question_05_22 {
         double principal;
         double balance = loanAmount;
 
-        System.out.printf("\n%-10s %10s %10s %10s","Payment","Interest","Principal","Balance");
+        System.out.printf("\n%-10s %10s %10s %10s", "Payment", "Interest", "Principal", "Balance");
 
         for (int i = 1; i <= 12; i++) {
 
             interest = monthlyInterestRate * balance;
-            principal=monthlyPayment-interest;
-            balance= balance-principal;
+            principal = monthlyPayment - interest;
+            balance = balance - principal;
 
-            System.out.printf("\n%-10d %10.2f %10.2f %10.2f",i,interest,principal,balance);
+            System.out.printf("\n%-10d %10.2f %10.2f %10.2f", i, interest, principal, balance);
 
 
         }
