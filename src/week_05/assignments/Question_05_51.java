@@ -23,8 +23,13 @@ public class Question_05_51 {
             if (firstSt.charAt(i) == secondSt.charAt(i)) {
                 prefixSt += firstSt.charAt(i);
 
+            }else {
+                break;
             }
 
+        }
+        if (prefixSt.length()==0){
+            System.out.println(firstSt+" and "+secondSt+" have no common prefix");
         }
         System.out.println(prefixSt);
     }
