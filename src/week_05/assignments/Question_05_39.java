@@ -12,7 +12,7 @@ public class Question_05_39 {
         double necessaryAmount = 10000;
         double account = 0;
         do {
-            necessaryAmount++;
+            necessaryAmount+=0.01;
             account = necessaryAmount * 0.12;
 
         } while (remainingAmountToTarget >= account);
