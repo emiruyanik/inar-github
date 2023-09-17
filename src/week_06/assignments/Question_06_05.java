@@ -49,6 +49,6 @@ public class Question_06_05 {
                 min = num1;
             }
         }
-        System.out.printf("%.1f %.1f %.1f",max,mid,min);
+        System.out.printf("%.1f %.1f %.1f", max, mid, min);
     }
 }

@@ -8,11 +8,11 @@ public class Question_06_08 {
         double fahrenheit = 120.0;
         for (int i = 0; i < 10; i++) {
 
-            System.out.printf("%-13.2f %-13.2f |    %-13.2f %-13.2f\n",celsius,celsiusToFahrenheit(celsius)
-            ,fahrenheit,fahrenheitToCelsius(fahrenheit));
+            System.out.printf("%-13.2f %-13.2f |    %-13.2f %-13.2f\n", celsius, celsiusToFahrenheit(celsius)
+                    , fahrenheit, fahrenheitToCelsius(fahrenheit));
 
             celsius--;
-            fahrenheit-=10.0;
+            fahrenheit -= 10.0;
 
         }
 

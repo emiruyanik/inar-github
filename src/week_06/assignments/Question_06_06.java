@@ -11,14 +11,15 @@ public class Question_06_06 {
 
         displayPattern(numberOfRows);
     }
-    public static void displayPattern(int numberOfRows){
-        for (int i = 1; i <=numberOfRows ; i++) {
 
-            for (int j = numberOfRows-i; j >0 ; j--) {
+    public static void displayPattern(int numberOfRows) {
+        for (int i = 1; i <= numberOfRows; i++) {
+
+            for (int j = numberOfRows - i; j > 0; j--) {
                 System.out.print("  ");
             }
-            for (int j = i; j >0 ; j--) {
-                System.out.print(j+" ");
+            for (int j = i; j > 0; j--) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }

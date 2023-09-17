@@ -9,7 +9,7 @@ public class Question_06_03 {
         System.out.print("Enter an integer:");
         int numb = input.nextInt();
 
-        System.out.println(( isPalindrome(numb))?+numb+" is palindrome":+numb+" is not palindrome");
+        System.out.println((isPalindrome(numb)) ? +numb + " is palindrome" : +numb + " is not palindrome");
 
     }
 

@@ -13,20 +13,21 @@ public class Question_06_07 {
         double annualInterestRate = input.nextDouble();
 
 
-
-        for (int i = 1; i <=30 ; i++) {
-           double yearlyAmount = futureInvestmentValue(amountInvested,annualInterestRate,i);
-            System.out.printf("%.2f\n",yearlyAmount);
+        for (int i = 1; i <= 30; i++) {
+            double yearlyAmount = futureInvestmentValue(amountInvested, annualInterestRate, i);
+            System.out.printf("%.2f\n", yearlyAmount);
         }
     }
-    public static double futureInvestmentValue(double investmentAmount,double annualInterestRate,int i){
+
+    public static double futureInvestmentValue(double investmentAmount, double annualInterestRate, int i) {
         double monthlyInterestRate = monthlyInterestRate(annualInterestRate);
-        double futureInvestmentAmount =investmentAmount*Math.pow((1+monthlyInterestRate),i*12);
+        double futureInvestmentAmount = investmentAmount * Math.pow((1 + monthlyInterestRate), i * 12);
 
         return futureInvestmentAmount;
     }
-    public static double monthlyInterestRate(double annualInterestRate){
-        return annualInterestRate/12/100.0;
+
+    public static double monthlyInterestRate(double annualInterestRate) {
+        return annualInterestRate / 12 / 100.0;
     }
 
 }

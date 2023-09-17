@@ -11,19 +11,19 @@ public class Question_06_02 {
 
         int totalDigitsOfNumber = sumDigits(number);
 
-        System.out.printf("Sum of all digits of %d is %d",number,totalDigitsOfNumber);
+        System.out.printf("Sum of all digits of %d is %d", number, totalDigitsOfNumber);
 
 
     }
 
-    public static int sumDigits(long number){
-        int total =0;
+    public static int sumDigits(long number) {
+        int total = 0;
 
         do {
-            long digit = number%10;
-            total+= (int) digit;
-            number=number/10;
-        }while (number!=0);
+            long digit = number % 10;
+            total += (int) digit;
+            number = number / 10;
+        } while (number != 0);
 
         return total;
     }

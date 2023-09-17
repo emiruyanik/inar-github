@@ -14,11 +14,12 @@ public class Question_06_04 {
 
 
     }
-    public static void reverse(int numb){
-        String digits = numb+"";
-        String reverseDigits="";
-        for (int i = digits.length(); i >0 ; i--) {
-            reverseDigits+=digits.charAt(i-1);
+
+    public static void reverse(int numb) {
+        String digits = numb + "";
+        String reverseDigits = "";
+        for (int i = digits.length(); i > 0; i--) {
+            reverseDigits += digits.charAt(i - 1);
         }
         System.out.println(reverseDigits);
     }
