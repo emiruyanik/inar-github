@@ -1,4 +1,4 @@
-package week_06.assignments;
+package week_06.live_class;
 
 public class Question_06_14 {
     public static void main(String[] args) {

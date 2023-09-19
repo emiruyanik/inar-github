@@ -82,7 +82,7 @@ public class Question_03_13 {
                 else if (income <= 45550)
                     tax = 11950 * 0.10 + (income - 11950) * 0.15;
                 else if (income <= 117450)
-                    tax = 811950 * 0.10 + (income - 11950) * 0.15 +
+                    tax = 11950 * 0.10 + (45550 - 11950) * 0.15 +
                             (income - 45550) * 0.25;
                 else if (income <= 190200)
                     tax = 811950 * 0.10 + (income - 11950) * 0.15 +
