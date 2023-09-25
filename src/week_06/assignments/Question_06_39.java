@@ -15,18 +15,18 @@ public class Question_06_39 {
         double p2X = input.nextDouble();
         double p2Y = input.nextDouble();
 
-       if (leftOfTheLine(p0X,p0Y,p1X,p1Y,p2X,p2Y)){
-           System.out.printf("(%.1f,%.1f) is on the left side of the line from (%.1f,%.1f) to(%.1f,%.1f)"
-           ,p2X,p2Y,p0X,p0Y,p1X,p1Y);
-       }
-       if (onTheSameLine(p0X,p0Y,p1X,p1Y,p2X,p2Y)){
-           System.out.printf("(%.1f,%.1f) is on the same line from (%.1f,%.1f) to(%.1f,%.1f)"
-                   ,p2X,p2Y,p0X,p0Y,p1X,p1Y);
-       }
-       if (rightOfTheLine(p0X,p0Y,p1X,p1Y,p2X,p2Y)){
-           System.out.printf("(%.1f,%.1f) is on the right side of the line  from (%.1f,%.1f) to(%.1f,%.1f)"
-                   ,p2X,p2Y,p0X,p0Y,p1X,p1Y);
-       }
+        if (leftOfTheLine(p0X, p0Y, p1X, p1Y, p2X, p2Y)) {
+            System.out.printf("(%.1f,%.1f) is on the left side of the line from (%.1f,%.1f) to(%.1f,%.1f)"
+                    , p2X, p2Y, p0X, p0Y, p1X, p1Y);
+        }
+        if (onTheSameLine(p0X, p0Y, p1X, p1Y, p2X, p2Y)) {
+            System.out.printf("(%.1f,%.1f) is on the same line from (%.1f,%.1f) to(%.1f,%.1f)"
+                    , p2X, p2Y, p0X, p0Y, p1X, p1Y);
+        }
+        if (rightOfTheLine(p0X, p0Y, p1X, p1Y, p2X, p2Y)) {
+            System.out.printf("(%.1f,%.1f) is on the right side of the line  from (%.1f,%.1f) to(%.1f,%.1f)"
+                    , p2X, p2Y, p0X, p0Y, p1X, p1Y);
+        }
     }
 
     public static boolean leftOfTheLine(double x0, double y0, double x1, double y1, double x2, double y2) {
