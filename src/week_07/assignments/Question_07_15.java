@@ -29,8 +29,8 @@ public class Question_07_15 {
         for (int i = 0; i < numbers.length; i++) {
             check = true;
             int numb = numbers[i];
-            for (int j = i + 1; j < numbers.length; j++) {
-                if (numb == numbers[j]) {
+            for (int j = i; j > 0; j--) {
+                if (numb == numbers[j - 1]) {
                     check = false;
                     break;
                 }
