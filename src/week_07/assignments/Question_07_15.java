@@ -16,9 +16,9 @@ public class Question_07_15 {
         int[] unrepeatedNumbers = eliminateDuplicates(numbers);
         System.out.print("The distinct numbers are:");
         for (int numb : unrepeatedNumbers) {
-            if (numb > 0) {
-                System.out.print(numb + " ");
-            }
+
+            System.out.print(numb + " ");
+
 
         }
     }
@@ -26,6 +26,7 @@ public class Question_07_15 {
     public static int[] eliminateDuplicates(int[] numbers) {
         int[] eliminatedNumbers = new int[10];
         boolean check;
+        int count = 0;
         for (int i = 0; i < numbers.length; i++) {
             check = true;
             int numb = numbers[i];
@@ -36,10 +37,15 @@ public class Question_07_15 {
                 }
             }
             if (check) {
-                eliminatedNumbers[i] = numb;
+                eliminatedNumbers[count] = numb;
+                count++;
             }
 
         }
-        return eliminatedNumbers;
+        int[] result = new int[count];
+        for (int i = 0; i < count; i++) {
+            result[i] = eliminatedNumbers[i];
+        }
+        return result;
     }
 }
