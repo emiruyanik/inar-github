@@ -7,63 +7,70 @@ public class Question_07_35 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String[] words = {"tsunami", "flood", "volcano", "rain", "rainbow", "hail", "snow"};
-
-        String randomStr = randomStr(words);
-        int differentLetters = numberOfDifferentLetters(randomStr);
-
-        String[] letters = new String[randomStr.length()];
-        for (int i = 0; i < letters.length; i++) {
-            letters[i] = randomStr.charAt(i) + "";
-        }
-
-        System.out.print("Enter a letter in word ");
-        String[] array = new String[randomStr.length()];
-        Arrays.fill(array, "*");
-        int wrongAnswers = 0;
+        String control;
+        char yesOrNo;
         do {
-            System.out.print("Enter a letter in word ");
-            System.out.print(Arrays.toString(array));
+            String randomStr = randomStr(words);
+            int differentLetters = numberOfDifferentLetters(randomStr);
 
-            String ch = input.nextLine();
-            ch = ch.toLowerCase();
-            ch = ch.charAt(0) + "";
-
-            int index = -1;
-            int[] indexes = new int[letters.length];
-            int count = 0;
-            boolean check = true;
-
+            String[] letters = new String[randomStr.length()];
             for (int i = 0; i < letters.length; i++) {
-                if (ch.equals(array[i])) {
-                    check = false;
-                    index = -2;
-                    break;
-                }
+                letters[i] = randomStr.charAt(i) + "";
             }
 
-            if (check) {
+            System.out.print("Enter a letter in word ");
+            String[] array = new String[randomStr.length()];
+            Arrays.fill(array, "*");
+            int wrongAnswers = 0;
+            do {
+                System.out.print("Enter a letter in word ");
+                System.out.print(Arrays.toString(array));
+
+                String ch = input.nextLine();
+                ch = ch.toLowerCase();
+                ch = ch.charAt(0) + "";
+
+                int index = -1;
+                int[] indexes = new int[letters.length];
+                int count = 0;
+                boolean check = true;
+
                 for (int i = 0; i < letters.length; i++) {
-                    if (ch.equals(letters[i])) {
-                        index = i;
-                        indexes[count] = index;
-                        count++;
-                        differentLetters--;
+                    if (ch.equals(array[i])) {
+                        check = false;
+                        index = -2;
+                        break;
                     }
                 }
-            }
-            if (index >= 0) {
-                for (int i = 0; i < count; i++) {
-                    array[indexes[i]] = ch;
+
+                if (check) {
+                    for (int i = 0; i < letters.length; i++) {
+                        if (ch.equals(letters[i])) {
+                            index = i;
+                            indexes[count] = index;
+                            count++;
+                            differentLetters--;
+                        }
+                    }
                 }
-            } else if (index == -1) {
-                System.out.println(ch + " is not in the word");
-                wrongAnswers++;
-            } else {
-                System.out.println(ch + " is already in the word");
-            }
-        } while (differentLetters != 0);
-        System.out.println("The word is:" + Arrays.toString(array));
-        System.out.println("you missed " + wrongAnswers + " time");
+                if (index >= 0) {
+                    for (int i = 0; i < count; i++) {
+                        array[indexes[i]] = ch;
+                    }
+                } else if (index == -1) {
+                    System.out.println(ch + " is not in the word");
+                    wrongAnswers++;
+                } else {
+                    System.out.println(ch + " is already in the word");
+                }
+            } while (differentLetters != 0);
+            System.out.println("The word is:" + Arrays.toString(array));
+            System.out.println("you missed " + wrongAnswers + " time");
+            System.out.println("Do you want to guess another word:");
+            control = input.nextLine();
+            control = control.toLowerCase();
+            yesOrNo = control.charAt(0);
+        } while (yesOrNo == 'y');
 
 
     }
