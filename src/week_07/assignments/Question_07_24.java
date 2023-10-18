@@ -12,12 +12,12 @@ public class Question_07_24 {
     }
 
     public static int pickCards(int[] cards, String[] suit, String[] ranks) {
-        int count = 0;
+        int numberOfpicks = 0;
         int countOfDifferentSuits = 0;
         int[] suits = new int[4];
         while (countOfDifferentSuits < 4) {
             int randomNumber = (int) (Math.random() * 52);
-            count++;
+            numberOfpicks++;
             boolean check = true;
             for (int i = 0; i < countOfDifferentSuits; i++) {
                 if (randomNumber / 13 == suits[i] / 13) {
@@ -32,7 +32,7 @@ public class Question_07_24 {
             }
 
         }
-        return count;
+        return numberOfpicks;
 
     }
 
