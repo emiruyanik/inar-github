@@ -101,7 +101,7 @@ public class Question_08_12 {
                 }
             }
             if (taxableIncome > brackets[status][4]) {
-
+                result += (brackets[status][4] - brackets[status][3]) * rates[3];
                 result += (taxableIncome - brackets[status][4]) * rates[5];
                 if (counter == returnNumber) {
                     break;
