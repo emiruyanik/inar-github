@@ -245,7 +245,7 @@ public class Question_08_20 {
     }
 
     public static boolean isConsecutiveFourRedForRowFromRight(int i, int j, char[][] ch) {
-        for (int k = j; k < j + 4; k++) {
+        for (int k = j; k > j - 4; k--) {
             if (ch[i][k] != 'R') {
                 return false;
             }
