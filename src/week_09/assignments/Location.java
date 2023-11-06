@@ -30,7 +30,7 @@ public class Location {
                 }
             }
         }
-        return new Location(row,column,maxValue);
+        return new Location(row, column, maxValue);
 
 
     }
