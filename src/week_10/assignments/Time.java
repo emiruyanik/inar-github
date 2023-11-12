@@ -15,7 +15,7 @@ public class Time {
     }
 
     public Time(long elapseTime) {
-        setTime(elapseTime);
+        this.totalMilliSeconds = elapseTime;
         this.seconds = getCurrentSeconds();
         this.minutes = getCurrentMinutes();
         this.hour = getCurrentHour();
@@ -77,6 +77,9 @@ public class Time {
     }
 
     public void setTime(long elapseTime) {
-        totalMilliSeconds = elapseTime;
+        this.totalMilliSeconds = elapseTime;
+        this.seconds = getCurrentSeconds();
+        this.minutes = getCurrentMinutes();
+        this.hour = getCurrentHour();
     }
 }

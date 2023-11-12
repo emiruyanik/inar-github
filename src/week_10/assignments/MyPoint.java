@@ -21,11 +21,11 @@ public class MyPoint {
         return Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
     }
 
-    private double getX() {
+    public double getX() {
         return x;
     }
 
-    private double getY() {
+    public double getY() {
         return y;
     }
 }
