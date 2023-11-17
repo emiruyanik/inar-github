@@ -6,14 +6,14 @@ public class MyDate {
     private int day;
     private long totalMilliSeconds;
 
-    MyDate() {
+    public MyDate() {
         totalMilliSeconds = System.currentTimeMillis();
         this.day = findTheDay(totalMilliSeconds);
         this.month = findTheMonth(totalMilliSeconds);
         this.year = findTheYear(totalMilliSeconds);
     }
 
-    MyDate(long elapsedTime) {
+    public MyDate(long elapsedTime) {
         totalMilliSeconds = elapsedTime;
         this.day = findTheDay(totalMilliSeconds);
         this.month = findTheMonth(totalMilliSeconds);
@@ -149,5 +149,13 @@ public class MyDate {
 
     private int getTotalDays() {
         return getTotalHours() / 24;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "year=" + year +
+                        ", month=" + month +
+                        ", day=" + day;
     }
 }

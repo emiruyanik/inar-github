@@ -9,7 +9,7 @@ public class Circle2D {
         this(0, 0, 1);
     }
 
-    Circle2D(double x, double y, double radius) {
+    public Circle2D(double x, double y, double radius) {
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -52,5 +52,12 @@ public class Circle2D {
 
     private double findTheDistanceBetweenTwoPoints(double x1, double y1) {
         return Math.sqrt(Math.pow(this.getX() - x1, 2) + Math.pow(this.getY() - y1, 2));
+    }
+
+    @Override
+    public String toString() {
+        return
+                "radius=" + radius
+                ;
     }
 }
