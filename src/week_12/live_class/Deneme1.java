@@ -10,6 +10,7 @@ public class Deneme1 {
         System.out.println(System.getProperty("user.dir"));
         File file = new File(System.getProperty("user.dir") +
                 "/inar-java/src/week_12/live_class/A Tale of Two cities.txt");
+        System.out.println(file.getAbsoluteFile());
         System.out.println(file.getParent());
         File file1=new File(file.getParent()+"/newText");
        try (
